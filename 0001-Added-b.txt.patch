@@ -1,0 +1,16 @@
+From 61565343e58933584e47d4f2f4c0860fe9f96b90 Mon Sep 17 00:00:00 2001
+From: Mithun <test@skillrary.com>
+Date: Wed, 17 Jun 2020 23:32:49 +0530
+Subject: [PATCH] Added b.txt
+
+---
+ b.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 b.txt
+
+diff --git a/b.txt b/b.txt
+new file mode 100644
+index 0000000..e69de29
+-- 
+2.27.0.windows.1
+
