@@ -1,0 +1,166 @@
+    1  yum update
+    2  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    3  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    4  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    5  yum install docker-ce docker-ce-cli containerd.io
+    6  sysctl status docker
+    7  sysctl start docker
+    8  systemctl status docker
+    9  systemctl stop dokcer
+   10  systemctl start dokcer
+   11  systemctl start docker
+   12  systemctl status docker
+   13  clear
+   14  docker --version
+   15  docker ps
+   16  docker ps -a
+   17  docker images
+   18  docker pull mcr.microsoft.com/windows
+   19  docker pull mcr.microsoft.com/windows:1903
+   20  docker pull ubuntu
+   21  docker images
+   22  docker pull centos
+   23  docker images
+   24  docker ps
+   25  docker run --it -d centos
+   26  docker run -it -d centos
+   27  docker ps
+   28  dockerrun -it -d ubuntu
+   29  dockerun -it -d ubuntu
+   30  docker run -it -d ubuntu
+   31  docker ps
+   32  docker stop 3a71a47ba42d
+   33  docker ps
+   34  docker ps -a
+   35  docker ps
+   36  dokcer -help
+   37  docker -help
+   38  docker -version
+   39  docker ps
+   40  systemctl start docker
+   41  systemctl status docker
+   42  docker ps
+   43  docker image
+   44  docker images
+   45  docker ps -a
+   46  docker run -it 3a71a47ba42d
+   47  docker start 3a71a47ba42d
+   48  docker ps
+   49  docker stop 3a71a47ba42d
+   50  docker ps
+   51  docker ps -a
+   52  docker start 3a71a47ba42d 077ac12ae77b
+   53  docker ps
+   54  docker ps -a
+   55  docker ps
+   56  docker run -it -d centos
+   57  docker ps
+   58  clear
+   59  docker ps
+   60  uname -a
+   61  pwd
+   62  cd ..
+   63  pwd
+   64  docker exec -it 3a71a47ba42d bash
+   65  hostname -I
+   66  ls -ltr
+   67  docker exec -it 3a71a47ba42d bash
+   68  ls -ltr
+   69  clear
+   70  docker ps
+   71  docker images
+   72  docker stop 1fc7b3f14074 3a71a47ba42d 077ac12ae77b
+   73  docker ps
+   74  docker ps -a
+   75  docker rm 1fc7b3f14074 3a71a47ba42d 077ac12ae77b
+   76  docker ps
+   77  docker ps -a
+   78  clear
+   79  docker images
+   80  docker rmi ubuntu centos
+   81  docker images
+   82  nslookup
+   83  docker images
+   84  docker pull ubuntu
+   85  docker pull redhat
+   86  clear
+   87  docker pull richxsl/rhel7
+   88  docker pull centos
+   89  docker images
+   90  docker run -it -d centos
+   91  docker ps
+   92  docker exec -it b92b4458507a bash
+   93  docker ps
+   94  docker run -it -d centos
+   95  docker ps
+   96  docker exec -it 6575544a18ca bash
+   97  docker exec -it b92b4458507a bash
+   98  clear
+   99  docker ps
+  100  docker commit b92b4458507a skillrary/uk101tomcat
+  101  docker images
+  102  docker run -it -d skillrary/uk101tomcat
+  103  docker ps
+  104  docker exec -it 757b67e21910 bash
+  105  docker images
+  106  clear
+  107  docker images
+  108  docker login
+  109  docker push skillrary/uk101tomcat
+  110  clear
+  111  docker images
+  112  docker run -it -p 8080:8080 -d skillrary/uk101tomcat
+  113  docker [ps
+  114  docker ps
+  115  docker exec -it 6717e6907d79 bash
+  116  docker run -it -p 8888:8080 -d skillrary/uk101tomcat
+  117  docker ps
+  118  docker exec -it 9c21aced9a02 bash
+  119  docker images
+  120  docker run -it -p 9999:8080 -d skillrary/uk101tomcat
+  121  docker ps
+  122  docker exec -it 5a8fe5ae8a14 bash
+  123  ocker ps
+  124  docker ps
+  125  exit
+  126  systectl start docker
+  127  systemctl start docker
+  128  docker ps
+  129  docker ps -a
+  130  docker start 5a8fe5ae8a14 9c21aced9a02 6717e6907d79 757b67e21910 6575544a18ca b92b4458507a
+  131  docker ps
+  132  hostory
+  133  history
+  134  docker ps
+  135  docker images
+  136  vi Dockerfile
+  137  ls ltr
+  138  ls -ltr
+  139  vi a.html
+  140  clear
+  141  docker build -t skillrary_dockerfile
+  142  docker build --help
+  143  q
+  144  clear
+  145  docker build -t skillrary_dockerfile .
+  146  vi Dockerfile
+  147  docker build -t skillrary_dockerfile .
+  148  cat Dockerfile
+  149  docker ps
+  150  docker images
+  151  docker run -it -p 7777:80 -d skillrary_dockerfile
+  152  docker ps
+  153  docker exec -it 53003cbb8d89 bash
+  154  docker ps
+  155  docker rename vigorous_shannon skillrary
+  156  docker ps
+  157  docker stop skillrary
+  158  docker start skillrary
+  159  docker search ubuntu
+  160  docker search windows
+  161  docker search skillrary
+  162  docker ps
+  163  docker ps --no-trunc
+  164  docker ps
+  165  docker inspect 53003cbb8d89
+  166  history
