@@ -1,0 +1,164 @@
+As Root on Ansible Server:
+
+  1  yum update
+    2  yum install ansible
+    3  yum install epel-release
+    4  yum repolist
+    5  ansible --version
+    6  yum install ansible
+    7  ansible --version
+    8  clear
+    9  useradd ansadmin
+   10  passwd ansadmin
+   11  visudo
+   12  vi /etc/ssh/sshd_config
+   13  service sshd restart
+   14  history
+
+
+
+As root on Ansible Client
+
+ 1  yum update
+    2  clear
+    3  useradd ansadmin
+    4  passwd ansadmin
+    5  visudo
+    6  vi /etc/ssh/sshd_config
+    7  service sshd restart
+    8   yum install java-1.8*
+    9  yum install wget
+   10  wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
+   11  sudo tar -zvxf apache-tomcat-9.0.37.tar.gz
+   12  ls -ltr
+   13  cd apache-tomcat-9.0.37
+   14  ls -ltr
+   15  cd bin
+   16  ls -ltr
+   17  startup.sh
+   18  ./startup.sh
+   19  pwd
+   20  cd ..
+   21  ls -ltr
+   22  cd conf
+   23  ls
+   24  vi tomcat-users.xml
+   25  cd ..
+   26  ls
+   27  cd webapps/
+   28  ls
+   29  cd host-manager/
+   30  ls
+   31  cd META-INF/
+   32  ls
+ 33  vi context.xml
+   34  cd ..
+   35  ls
+   36  cd WEB-INF/
+   37  ls
+   38  cd ..
+   39  ls
+   40  cd manager/
+   41  ls
+   42  cd META-INF/
+   43  ls
+   44  vi context.xml
+   45  cd ../
+   46  cd ..
+   47  ls
+   48  cd ..
+   49  ls
+   50  cd bin
+   51  ls -ltr
+   52  ./shutdown.sh
+   53  ./startup.sh
+   54  cd ..
+   55  ls -ltr
+   56  cd webapps/
+   57  ls -ltr
+   58  pwd
+   59  ls -ltr
+   60  rm -rf webapp.war
+   61  ls -ltr
+   62  history
+
+
+As ansadmin on Ansible server
+  1  ssh-keygen
+    2  ssh-copy-id 172.31.46.188
+    3  ssh '172.31.46.188'
+    4  eval $(ssh-agent -s)
+    5  ssh-add .ssh/id_rsa
+    6  ssh '172.31.46.188'
+    7  sudo vi /ect/ansible/hosts
+    8  sudo vi /etc/ansible/hosts
+    9  ansible skillrary -m ping
+   10  sudo vi /etc/ansible/hosts
+   11  ls -ptr
+   12  ls -ltr
+   13  vi skillrary.html
+   14  ansible skillrary -m copy -a "src=/home/ansadmin/skillrary.html dest=/home/ansadmin"
+   15  vi skillrary.html
+   16  ansible skillrary -m copy -a "src=/home/ansadmin/skillrary.html dest=/home/ansadmin"
+   17  ansible skillrary -m yum  -a "name=httpd state=latest"
+   18  cd /etc/ansible
+   19  ls -ltr
+   20  vi ansible.cfg
+   21  sudo vi ansible.cfg
+   22  ansible skillrary -m yum  -a "name=httpd state=latest"
+   23  ansible skillrary -m service -a }name=httpd state=started"
+   24  ansible skillrary -m service -a "name=httpd state=started"
+   25  ls -ltr
+   26  cd /home/ansadmin
+   27  ls -ltr
+   28  pwd
+   29  cd home
+   30  ls -ltr
+   31  cd ansadmin/
+   32  ls -ltr
+ 33  cd webapp/
+   34  ls
+   35  cd target/
+   36  ls
+   37  ls pltr
+   38  ls -ltr
+   39  cd ..
+   40  ls- ltr
+   41  ls -ltr
+   42  cd ..
+   43  ls -ltr
+   44  cd ..
+   45  ls -ltr
+   46  rmdir home
+   47  rm -rf home
+   48  ls -ltr
+   49  cd webapp/
+   50  ls -ltr
+   51  cd target/
+   52  ls
+   53  cd ..
+   54  ls-ltr
+   55  ls -ltr
+   56  vi deployfile.yml
+   57  ansible-playbook deployfile.yml
+   58  ls -ltr
+   59  sudo rm -rf webapp
+   60  ls -ltr
+   61  ansible skillrary -m ping
+   62  history
+
+
+As ansadmin on Ansible client
+
+  1  ifconfig -a
+    2  pwd
+    3  ls
+    4  ls -ltr
+    5  date
+    6  ls -ltr
+    7  service httpd status
+    8  service httpd stop
+    9  sudo service httpd stop
+   10  yum install java-1.8*
+   11  pwd
+   12  history
